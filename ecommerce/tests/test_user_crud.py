@@ -6,12 +6,12 @@
 from unittest import TestCase
 from django.test import Client
 from users.models import User
-from backend.populate import (delete_all_records, 
+from tests.populate import (delete_all_records, 
 	populate_users , delete_users, poplating_user_using_djoser,
 	get_djoser_token,
 	)
 
-from backend.testing_functions import expect_records
+from tests.testing_functions import expect_records
 
 class TestCaseAllWorking(TestCase):
 	def test_case1(self):
