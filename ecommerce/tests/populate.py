@@ -1,6 +1,4 @@
 from users.models import User
-from groups.models import Group
-from group_members.models import GroupMember
 from django.test import Client
 
 
