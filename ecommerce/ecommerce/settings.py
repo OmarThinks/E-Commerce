@@ -41,10 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
-    "posts",
-    "comments",
-    "groups",
-    "group_members",
 ]
 
 MIDDLEWARE = [
@@ -127,6 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+AUTH_USER_MODEL='users.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
